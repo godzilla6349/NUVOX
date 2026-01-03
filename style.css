@@ -1,122 +1,112 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
 body {
   font-family: Arial, sans-serif;
   background: #000;
   color: #fff;
-  line-height: 1.6;
 }
 
 /* NAVBAR */
-.menu {
-  position: sticky;
+.navbar {
+  position: fixed;
   top: 0;
+  width: 100%;
   background: #000;
-  padding: 12px 0;
+  border-bottom: 1px solid #111;
   z-index: 1000;
 }
 
-.menu ul {
-  list-style: none;
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
   display: flex;
-  justify-content: center;
-  gap: 22px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu ul li a {
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 500;
-}
-
-.menu ul li a:hover {
-  text-decoration: underline;
 }
 
 /* HERO */
-header.hero {
+.hero {
+  margin-top: 80px; /* 🔥 MOST IMPORTANT FIX */
   text-align: center;
-  padding: 90px 20px;
+  padding: 80px 20px;
 }
 
-header.hero h1 {
-  font-size: 42px;
+.hero h1 {
+  font-size: 48px;
   margin-bottom: 15px;
 }
 
-header.hero p {
+.hero p {
   color: #ccc;
-  max-width: 700px;
-  margin: 0 auto 25px;
+  font-size: 18px;
 }
 
-/* BUTTONS */
-.btn {
+.hero .link {
   display: inline-block;
-  margin: 8px;
-  padding: 12px 26px;
-  background: #fff;
-  color: #000;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
+  margin-top: 15px;
+  color: #7a7aff;
 }
 
 /* SECTIONS */
-section {
+.section {
   max-width: 900px;
-  margin: 50px auto;
-  padding: 0 20px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
 }
 
-section h2 {
-  font-size: 28px;
+.section h2 {
   margin-bottom: 15px;
-  text-align: center;
 }
 
-section p {
+.section p,
+.section li {
   color: #ccc;
-  text-align: center;
-  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-/* LIST */
-section ul {
-  list-style: disc;
-  max-width: 600px;
-  margin: 0 auto;
-  color: #ccc;
+.section ul {
+  list-style: none;
 }
 
 /* FOOTER */
 footer {
+  border-top: 1px solid #111;
+  padding: 30px 20px;
   text-align: center;
-  padding: 30px 15px;
-  background: #000;
-  color: #aaa;
-  font-size: 14px;
+  color: #888;
 }
 
-/* MOBILE FIX */
+/* MOBILE */
 @media (max-width: 768px) {
-  header.hero h1 {
-    font-size: 32px;
+  .nav-links {
+    gap: 12px;
+    font-size: 12px;
   }
 
-  .menu ul {
-    gap: 14px;
-  }
-
-  section h2 {
-    font-size: 24px;
+  .hero h1 {
+    font-size: 36px;
   }
 }
