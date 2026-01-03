@@ -94,16 +94,17 @@ footer small {
   color: #888888;
 }
 }
-/* Mobile menu fix */
+/* MOBILE MENU FIX – NUVOX */
 @media (max-width: 768px) {
-  nav ul {
+  .menu ul {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    row-gap: 10px;
   }
 
-  nav ul li a {
+  .menu ul li a {
     font-size: 13px;
     padding: 6px 8px;
+    white-space: nowrap;
   }
 }
