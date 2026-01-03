@@ -96,12 +96,14 @@ footer small {
 }
 /* Mobile menu fix */
 @media (max-width: 768px) {
-  .menu ul {
+  nav ul {
     flex-wrap: wrap;
-    row-gap: 10px;
+    gap: 10px;
+    justify-content: center;
   }
 
-  .menu a {
+  nav ul li a {
     font-size: 13px;
+    padding: 6px 8px;
   }
 }
