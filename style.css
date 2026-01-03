@@ -94,3 +94,14 @@ footer small {
   color: #888888;
 }
 }
+/* Mobile menu fix */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .menu a {
+    font-size: 13px;
+  }
+}
