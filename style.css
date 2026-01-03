@@ -98,8 +98,8 @@ footer small {
 @media (max-width: 768px) {
   nav ul {
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
+    gap: 10px;
   }
 
   nav ul li a {
