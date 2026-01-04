@@ -209,4 +209,8 @@ footer {
 
 .center-box li {
   margin: 8px 0;
+}.logo {
+  height: 40px;
+  margin-right: 20px;
+  vertical-align: middle;
 }
