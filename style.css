@@ -248,3 +248,19 @@ footer {
 .logo-section img:hover {
   transform: scale(1.1);
 }
+.hero {
+  background: linear-gradient(135deg, #020024, #000000, #001f1a);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
