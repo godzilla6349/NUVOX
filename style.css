@@ -231,3 +231,20 @@ footer {
 .logo-section img:hover {
   transform: scale(1.1);
 }
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.logo-section img {
+  max-width: 140px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-section img:hover {
+  transform: scale(1.1);
+}
